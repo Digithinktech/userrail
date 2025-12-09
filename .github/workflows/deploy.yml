@@ -28,7 +28,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          # We removed the cache line so it doesn't look for the missing lock file
+          # We removed the cache setting so it works without package-lock.json
 
       - name: Install dependencies
         run: npm install
